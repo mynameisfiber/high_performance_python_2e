@@ -1,6 +1,9 @@
 High Performance Python 2e: The Code
 =================================
 
+> NOTE: This repo is still being built. We'll remove this notice once all the
+> code samples have been merged into the repo!
+
 This repository contains the code from ["High Performance
 Python 2e"](http://shop.oreilly.com/product/0636920268505.do) by Micha Gorelick
 and Ian Ozsvald with O'Reilly Media.  Each directory contains the examples from
