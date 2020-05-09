@@ -1,0 +1,17 @@
+
+ Performance counter stats for 'python diffusion_numpy_naive.py':
+
+     8,575,098,217      cycles                    #    2.886 GHz                      
+     7,103,809,843      instructions              #    0.83  insn per cycle           
+     1,078,489,079      cache-references          #  362.982 M/sec                    
+       230,990,178      cache-misses              #   21.418 % of all cache refs      
+     1,252,191,334      branches                  #  421.444 M/sec                    
+         8,694,936      branch-misses             #    0.69% of all branches          
+       2971.194679      task-clock (msec)         #    1.279 CPUs utilized          
+           403,285      faults                    #    0.136 M/sec                  
+           403,285      minor-faults              #    0.136 M/sec                  
+                94      cs                        #    0.032 K/sec                  
+                 9      migrations                #    0.003 K/sec                  
+
+       2.323691596 seconds time elapsed
+

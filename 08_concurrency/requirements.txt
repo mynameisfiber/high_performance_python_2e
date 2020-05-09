@@ -1,0 +1,14 @@
+bcrypt
+
+uvloop
+
+tornado
+pycurl
+
+aiohttp
+aiodns
+cchardet
+
+gevent
+
+requests

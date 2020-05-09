@@ -1,0 +1,20 @@
+Wrote profile results to diffusion_python.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 787.161 s
+File: diffusion_python.py
+Function: evolve at line 12
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    12                                           @profile
+    13                                           def evolve(grid, dt, D=1.0):
+    14       500        843.0      1.7      0.0      xmax, ymax = grid_shape
+    15       500   24764794.0  49529.6      3.1      new_grid = [[0.0 for x in range(grid_shape[1])] for x in range(grid_shape[0])]
+    16    320500     208683.0      0.7      0.0      for i in range(xmax):
+    17 205120000  128928913.0      0.6     16.4          for j in range(ymax):
+    18 204800000  222422192.0      1.1     28.3              grid_xx = grid[(i+1)%xmax][j] + grid[(i-1)%xmax][j] - 2.0 * grid[i][j]
+    19 204800000  228660607.0      1.1     29.0              grid_yy = grid[i][(j+1)%ymax] + grid[i][(j-1)%ymax] - 2.0 * grid[i][j]
+    20 204800000  182174957.0      0.9     23.1              new_grid[i][j] = grid[i][j] + D * (grid_xx + grid_yy) * dt
+    21       500        331.0      0.7      0.0      return new_grid
+

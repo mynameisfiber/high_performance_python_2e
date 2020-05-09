@@ -1,0 +1,13 @@
+Wrote profile results to diffusion_numpy_naive.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 2.07788 s
+File: diffusion_numpy_naive.py
+Function: evolve at line 16
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    16                                           @profile
+    17                                           def evolve(grid, dt, D=1):
+    18       500    2077882.0   4155.8    100.0      return grid + dt * D * laplacian(grid)
+

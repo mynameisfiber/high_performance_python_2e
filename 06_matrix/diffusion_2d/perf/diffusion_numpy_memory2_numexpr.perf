@@ -1,0 +1,17 @@
+
+ Performance counter stats for 'python diffusion_numpy_memory2_numexpr.py':
+
+     8,856,947,179      cycles                    #    2.872 GHz                      
+     9,354,357,453      instructions              #    1.06  insn per cycle           
+     1,077,518,384      cache-references          #  349.423 M/sec                    
+        59,407,830      cache-misses              #    5.513 % of all cache refs      
+     1,018,525,317      branches                  #  330.292 M/sec                    
+        11,941,430      branch-misses             #    1.17% of all branches          
+       3083.709890      task-clock (msec)         #    1.991 CPUs utilized          
+            15,820      faults                    #    0.005 M/sec                  
+            15,820      minor-faults              #    0.005 M/sec                  
+             8,671      cs                        #    0.003 M/sec                  
+             2,096      migrations                #    0.680 K/sec                  
+
+       1.548924090 seconds time elapsed
+

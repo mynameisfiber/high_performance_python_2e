@@ -1,0 +1,14 @@
+Speed (Gbit/s),Name
+0.326,LTE
+1.3,Wireless 802.11ac
+5,USB 3.0
+7,Wireless 802.11ad
+10,10 Gigabit Ethernet
+10,USB 3.1
+16,SATAe
+40,Thunderbolt3
+40,USB 4
+100,100 Gigabit Ethernet
+204.8,DDR4 SDRAM
+256,PCIe 3.0
+409.6,DDR5 SDRAM
