@@ -11,8 +11,9 @@ You can find out more about the authors here:
 * https://github.com/mynameisfiber
 * http://micha.codes/
 * https://github.com/ianozsvald/
-* https://ianozsvald.com/
+* https://ianozsvald.com/ (Ian's twice-a-month newsletter contains Higher Performance and Data Science tips: https://ianozsvald.com/data-science-jobs/ and Ian runs a training course on Higher Performance - see https://ianozsvald.com/training/)
 * https://twitter.com/ianozsvald
+
 
 Topics Covered
 --------------
