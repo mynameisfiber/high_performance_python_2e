@@ -1,13 +1,18 @@
 High Performance Python 2e: The Code
 =================================
 
-> NOTE: This repo is still being built. We'll remove this notice once all the
-> code samples have been merged into the repo!
-
 This repository contains the code from ["High Performance
 Python 2e"](http://shop.oreilly.com/product/0636920268505.do) by Micha Gorelick
 and Ian Ozsvald with O'Reilly Media.  Each directory contains the examples from
 the chapter in addition to other interesting code on the subject.
+
+You can find out more about the authors here:
+
+* https://github.com/mynameisfiber
+* http://micha.codes/
+* https://github.com/ianozsvald/
+* https://ianozsvald.com/
+* https://twitter.com/ianozsvald
 
 Topics Covered
 --------------
@@ -20,20 +25,21 @@ order to direct optimizations.
 
 The following topics are covered in the code repo:
 
-- Chapter 1: Profiling
-    * What are the elements of a computer's architecture?
-    * What are some common alternate computer architectures?
-    * How does Python abstract the underlying computer architecture?
-    * What are some of the hurdles to making performant Python code?
-    * What strategies can help you become a highly performant programmer?
 
-- Chapter 2: Understanding Performant Programming
+- Chapter 1: Understanding Performant Programming
     * How can I identify speed and RAM bottlenecks in my code?
     * How do I profile CPU and memory usage?
     * What depth of profiling should I use?
     * How can I profile a long-running application?
     * What's happening under the hood with CPython?
     * How do I keep my code correct while tuning performance?
+
+- Chapter 2: Profiling
+    * What are the elements of a computer's architecture?
+    * What are some common alternate computer architectures?
+    * How does Python abstract the underlying computer architecture?
+    * What are some of the hurdles to making performant Python code?
+    * What strategies can help you become a highly performant programmer?
 
 - Chapter 3: Lists and Tuples
     * What are lists and tuples good for?
