@@ -16,6 +16,11 @@ You can find out more about the authors here:
   * Ian runs a training course on Higher Performance - see https://ianozsvald.com/training/
 * https://twitter.com/ianozsvald
 
+Errata
+------
+
+Errata can be filed here https://www.oreilly.com/cs/catalog/create/errata/?b=68228 (no login required, just a form with a few details) or you can check the confirmed errata here: https://www.oreilly.com/catalog/errata.csp?isbn=0636920268505 or file a bug on this repo, whatever's easiest.
+
 
 Topics Covered
 --------------
