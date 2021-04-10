@@ -1,6 +1,6 @@
-from datetime import datetime
+from datetime import datetime, time
 from itertools import count, filterfalse, groupby, islice
-from random import normalvariate, randint
+from random import normalvariate, randint, gauss
 
 from scipy.stats import normaltest
 
@@ -14,14 +14,27 @@ def read_data(filename):
 
 
 def read_fake_data(filename):
-    for timestamp in count():
-        #  We insert an anomalous data point approximately once a week
-        if randint(0, 7 * 60 * 60 * 24 - 1) == 1:
-            value = normalvariate(0, 1)
-        else:
+    # change mode every other day, and choose a new mode at random between 0 and 2
+    # if mode == 0 send 60*60*24-1 a constant value (= a hundred) 
+    # if mode == 1 send 60*60*24-1 random uniform values
+    # if mode == 2 send 60*60*24-1 random normal values
+    mode = 0
+    for timestamp in count(): # increment by a second
+        # test if timestamp is a new day
+        if is_another_day(timestamp):
+            mode = randint(0,2)
+            print(mode)
+        if mode == 0:
             value = 100
+        elif mode == 1:
+            value = randint(0,100)
+        else:
+            value = gauss(0,1)
         yield datetime.fromtimestamp(timestamp), value
 
+def is_another_day(timestamp):
+    # return true if timestamp is "yyyy-mm-dd 00:00:00"
+    return datetime.fromtimestamp(timestamp).time() == time(0,0)
 
 def groupby_day(iterable):
     key = lambda row: row[0].day
