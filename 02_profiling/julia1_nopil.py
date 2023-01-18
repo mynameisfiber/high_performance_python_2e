@@ -20,7 +20,7 @@ def calculate_z_serial_purepython(maxiter, zs, cs):
     return output
 
 
-def calc_pure_python(draw_output, desired_width, max_iterations):
+def calc_pure_python(desired_width, max_iterations):
     """Create a list of complex co-ordinates (zs) and complex parameters (cs), build Julia set and display"""
     x_step = (x2 - x1) / desired_width
     y_step = (y1 - y2) / desired_width
@@ -59,4 +59,4 @@ if __name__ == "__main__":
     # Calculate the Julia set using a pure Python solution with
     # reasonable defaults for a laptop
     # set draw_output to True to use PIL to draw an image
-    calc_pure_python(draw_output=False, desired_width=1000, max_iterations=300)
+    calc_pure_python(desired_width=1000, max_iterations=300)
